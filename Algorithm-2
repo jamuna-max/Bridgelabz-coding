@@ -1,0 +1,18 @@
+# Step1: create a new directory as 'Stage_Review'
+
+# Step2: Get inside a directory and create multiple files 
+
+# step3: cut or move a file & paste into a specific folder/directory
+
+# coding 
+
+for item in `ls *java *py *js *cs *sh`
+do
+filename=`echo $item | awk -F. '{ print $1 }'`
+if [ -d $filename ]
+then
+   rm -rf $filename
+fi
+mkdir $filename
+mv $item $filename
+done

@@ -1,0 +1,60 @@
+# Use Random Function ((RANDOM)) to get single digit
+
+# number=$((RANDOM))
+
+# echo "Random Number is" $number
+
+# Use Random to get Dice number between 1 to 6
+
+# num=$((RANDOM%6+1))
+# echo "Dice" $num
+
+# Add two Random Dice number and print the result
+
+# num1=$((RANDOM%6+1))
+# echo "Dice1 :" $num1
+# num2=$((RANDOM%6+1))
+# echo "Dice2 :" $num2
+# sum=$((num1+num2))
+# echo "Addition of two Random Dice Number:" $sum
+
+# Write a program that reads 5 Random 2 Digit values , then find their sum and the average
+
+
+#for i in {1..5}
+#do
+#num1=$((RANDOM%10+11))
+#echo $i "Random Two Digit Number is :"  $num1
+#done
+
+
+echo "Please enter your first number: "
+read a
+echo "Second number: "
+read b
+echo "Third number: "
+read c
+echo "Fourth number: "
+read d
+echo "Fifth number: "
+read e
+
+sum=$(($a + $b + $c + $d + $e))
+avg=$((sum / 5)) 
+
+echo "The sum of these numbers is: " $sum
+echo "The average of these numbers is: " $avg
+
+UNIT CONVERSION
+
+a) 1ft = 12 in then 42 in = ? ft
+
+
+
+
+
+
+
+
+
+

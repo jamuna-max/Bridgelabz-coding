@@ -1,0 +1,20 @@
+# Step 1: List/filter only java files 
+
+# Step2: find a 'Name' of that java files
+
+# Step3: Create a folder with same 'name' as file 'name'
+ 
+# Step4: copy a original file & paste in to a specific folder
+
+# Coding:
+
+for item in `ls *.java`
+do
+	filename=`echo $item | awk -F. '{ print $1 }'`
+	if [ -d $filename ]
+	then
+	    rm -r $filename
+	fi
+	mkdir $filename
+	cp -r $item $filename
+done
